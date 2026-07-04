@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Categories from "./pages/Categories";
+import Fetch from "./pages/Fetch";
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -33,6 +34,10 @@ function App() {
             />
           }
         />
+
+        <Route path="/fetch" element={<Fetch
+              addToCart={addToCart}
+             />} />
 
         <Route
           path="/products"

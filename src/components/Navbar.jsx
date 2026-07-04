@@ -13,11 +13,9 @@ function Navbar({cartCount = 0,
 
 {/* Logo */}
 <div>
-  <Link to="/">
     <h1 className="text-4xl font-bold text-blue-600">
       Shopify
     </h1>
-  </Link>
 </div>
 
 {/* Search Bar */}
@@ -41,6 +39,10 @@ function Navbar({cartCount = 0,
   <ul className="flex gap-6 font-semibold">
     <li>
       <Link to="/">Home</Link>
+    </li>
+
+     <li>
+      <Link to="/fetch">Fetch</Link>
     </li>
 
     <li>
